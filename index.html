@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" href="img/fd4.jpeg">
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="reset-webview.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+   <!-- Part 1: Navbar Starter Code -->
+  <div class="navbar">
+    <ul>
+      <li ><button id="theme-button">Toggle Dark Mode</button></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#About">About</a></li>
+      <li><a href="#Data">Data</a></li>
+      <li><a href="#Impact">Impact</a></li>
+      <!-- Stretch Challenge: Drop Down -->
+    </ul>
+  </div>
+
+  <!-- Part 2: Flexbox Layout Stater Code -->
+
+  <div class="container">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+  </div>
+  
+  <!--- Headings --->
+  <div class="header-container fade-in">
+    <div class="image-container">
+    <img src="img/f5.jpeg" id= "header-img" alt="Header Image"/></div>
+  <title>Food For All</title>
+    <div class= "header-item fade-in">
+     <h1> Everyone should have access to fresh foods.</h1>
+      <div class= "button-container">
+      Report Affected Areas</div>
+    <div class= "button-container">
+      Share Your Story
+    </div>
+    
+
+    <!--- About --->
+  <div id="About" class = "fade-in">
+    <h2>About My Topic</h2>
+     <h3>A food desert is an urban area in which it is difficult to buy affordable or good-quality fresh food.</h3>
+    <p>
+    </p>
+  <iframe 
+src="https://www.youtube.com/embed/iEWriN6kh3c?si=_tYo89mSoEuGA0H9">
+  </iframe>
+  </div>  
+
+
+    <!--- Data --->
+      <div id="Data" class="fade-in">
+    <h3>Data about my topic</h3>
+    <img src="img/fd 1.png" alt= "The number of households living in a food desert within the last decade." width= "300" height="300"/>
+    <p>The number of households living in a food desert within the last decade. </p>
+      </div>
+  
+    <!--- Impact --->
+      <div id="Impact" class= "fade-in">
+    <h2>The impact of food deserts?</h2>
+
+    <img src="img/fd3.jpeg" alt="A politcal cartoon showing a fast food trading post while a catus depicting how far fresh food options are located."/>
+    <h3>Where can this problem have lasting effects?</h3>
+    <p>Low-income areas throughout cities in the United States due to certain communities not having supermarkets and food retailers within a reasonable proximenty limiting reliable access to fresh foods.
+    </p>
+
+    <img src="img/fd2.jpeg" alt= "A cartoon showing the harmful facts of the impact of food deserts." width="350" height="315" />
+    <h3>What can the effects of food deserts also impact?</h3>
+    <p> The lack of access to fresh foods also lead to commmunited filled with more health issues and an increase in the potentially faced finacial strain. The lack of access to healthy food leads to more reports of obesity, diabetes, cardiovascular disease, gout, and more serve health disparties which in turn can lead to higher medical expenses as well as having to spend more on less sustainable food due to longevity of how these meals may strech in comparison to fresher opions and more money spent in transpotation to food.
+    </p>
+      </div>  
+
+      <div class="petition" id="petition">
+
+          <h2>Sign Our Petition 📢</h2>
+          <div class="petition-container">
+
+
+            <div class="petition-mtownfood">
+              <!-- info goes here -->
+              <p>Everyone regardless of their ecocnomic status deserves access to fresh foods and groceries in general, yet this is often not the case in many urban communities beginning with my very own in Memphis, Tennessee. Memphis is just one of the many cities which has now become populated with food deserts in low-income, minority- filled areas.This is due to the removal of grocery stores in communities and the lack of resources to combat this which needs attention and action.</p>
+            </div>
+
+            <div class="signatures" id="signatures">
+              <p>🖊️ DJ from Memphis supports this.</p>
+              <p>🖊️ Amy from Hickory Hill supports this.</p>
+              <p>🖊️ Teresa from South Memphis supports this.</p>
+            </div>
+            
+          </div>
+        <!--- Sign Petition Form --->
+        <form id="sign-petition" title="sign-petition">
+          <!-- inputs go here -->
+          <label for="name">Name:</label>
+          <input type="text" id="name"> 
+          <label for="hometown">Hometown:</label>
+          <input type="text" id="hometown"> 
+          <label for="email">Email:</label>
+          <input type="text" id="email"> 
+        </form>
+         <!--- Sign Now Button --->
+        <button id="sign-now-button">Sign Now</button>
+      </div>
+
+      <!-- Modal -->
+      <div id="thanks-modal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div id="modal-text-container">
+            <!-- text here -->
+             <p id="thanks-modal-content">Thank you for supporting the cause!</p>
+            <!-- button here (stretch feature) -->
+             <button id="close-modal-button">Close</button>
+          </div>
+          <!-- image here-->
+           <img src="img/cc.jpeg" alt="Celebration Image" id="modal-image" />
+        </div>
+
+      </div>
+      
+      <!--- Footer --->
+      <div class="footer">
+        <a href="https://snaped.fns.usda.gov/library/materials/community-action-guide-changing-food-deserts-food-oases-resource-states-and">Learn More</a>
+        <a href="https://www.midsouthfoodbank.org/ways-to-give-donate">Donate</a>
+      </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
